@@ -13,6 +13,5 @@ package org.example.ch3;
 
 public class Ex3_32 {
     public static void main(String[] args) {
-
     }
 }
