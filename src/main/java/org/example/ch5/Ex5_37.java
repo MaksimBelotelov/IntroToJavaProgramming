@@ -7,7 +7,7 @@ import java.util.Scanner;
 integer then displays its corresponding binary value. Don’t use Java’s Integer.
 toBinaryString(int) in this program.
  */
-public class Ex5_36 {
+public class Ex5_37 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter decimal integer:");
