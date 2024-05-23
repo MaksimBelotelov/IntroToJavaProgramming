@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+    class Rectangle {
+        -private double width = 1;
+        -private double height = 1;
+
+        + Rectangle() {}
+        + Rectangle(double width, double height)
+        + double getArea() : double
+        + double getPerimeter() : double
+
+    }
+
+
+@enduml
