@@ -8,9 +8,11 @@ Create the IllegalTriangleException class, and modify the constructor
 of the Triangle class to throw an IllegalTriangleException object if a
 triangle is created with sides that violate the rule, as follows:
 Construct a triangle with the specified sides
+
 public Triangle(double side1, double side2, double side3)
         throws IllegalTriangleException {
-Implement it
+    Implement it
+}
 */
 
 import org.example.ch11.GeometricObject;
