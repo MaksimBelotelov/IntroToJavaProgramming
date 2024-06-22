@@ -1,7 +1,5 @@
 package org.example.ch11;
 
-import org.example.Main;
-
 import java.util.Scanner;
 
 public class Ex11_1 {
