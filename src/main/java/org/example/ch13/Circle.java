@@ -34,6 +34,14 @@ public class Circle extends GeometricObject {
         return 2 * radius * Math.PI;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if(o instanceof Circle) {
+            return this.compareTo((Circle) o) == 0;
+        }
+        return false;
+    }
+
     public void printCircle() {
         System.out.println("The circle is created " + getDateCreated() +
                 " and the radius is " + radius);

@@ -11,8 +11,7 @@ a Square with a specified side. The Square class has a private double data field
 named side with its getter and setter methods. It has a no-arg constructor to
 create a Square with side 0, and another constructor that creates a Square with
 the specified side.
-Draw a UML diagram that involves Colorable, Square, and ­
- GeometricObject.
+Draw a UML diagram that involves Colorable, Square, and GeometricObject.
 Write a test program that creates an array of five GeometricObjects. For each object
 in the array, display its area and invoke its howToColor method if it is colorable.
  */
