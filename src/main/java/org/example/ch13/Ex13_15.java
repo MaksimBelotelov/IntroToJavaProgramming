@@ -7,6 +7,7 @@ Write a test program that prompts the user to enter two rational numbers and
 display the results.
  */
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 
 public class Ex13_15 {
@@ -39,7 +40,7 @@ class Rational13_15 extends Number
 
     private static BigInteger gcd(BigInteger n, BigInteger d) {
         BigInteger n1 = n.abs();
-        BigInteger n2 = n.abs();
+        BigInteger n2 = d.abs();
         BigInteger gcd = BigInteger.ONE;
 
         for (BigInteger k = BigInteger.ONE;
@@ -95,10 +96,11 @@ class Rational13_15 extends Number
 
     @Override
     public String toString() {
+        Rational13_15 rational = new Rational13_15(this.numerator, this.denominator);
         if (denominator.equals(BigInteger.ONE))
-            return numerator + "";
+            return rational.numerator + "";
         else
-            return numerator + "/" + denominator;
+            return rational.numerator + "/" + rational.denominator;
     }
 
     @Override
@@ -118,7 +120,7 @@ class Rational13_15 extends Number
 
     @Override
     public double doubleValue() {
-        return numerator.divide(denominator).doubleValue();
+        return ((new BigDecimal(numerator)).divide(new BigDecimal(denominator), 2, 0)).doubleValue();
     }
 
     @Override

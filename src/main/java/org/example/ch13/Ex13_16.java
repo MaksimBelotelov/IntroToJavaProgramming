@@ -16,7 +16,7 @@ public class Ex13_16 {
             System.out.println("Usage: java Ex13_16 \"3/4 + 1/5\"");
             System.exit(1);
         }
-
+        
         String[] tokens = args[0].split("\\s+");
         String[] num1 = tokens[0].split("/");
         String[] num2 = tokens[2].split("/");
