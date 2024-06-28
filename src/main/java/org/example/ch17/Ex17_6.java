@@ -1,23 +1,32 @@
-package org.example.ch12;
+package org.example.ch17;
 
-/*
-(IllegalArgumentException) Modify the Loan class in Listing 10.2 to
-throw IllegalArgumentException if the loan amount, interest rate, or
-number of years is less than or equal to zero.
-*/
 
-public class Ex12_4 {
-    public static void main(String[] args) {
-        try {
-            Loan loan = new Loan(-1.1, 1, 100.0);
-        }
-        catch (IllegalArgumentException ex) {
-            System.out.println(ex.getMessage());
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
+import java.util.ArrayList;
+
+public class Ex17_6 {
+    public static void main(String[] args) throws IOException {
+        try (ObjectOutputStream output =
+                new ObjectOutputStream(new FileOutputStream("Exercise17_06.dat"))) {
+
+            ArrayList<Loan> loansList = new ArrayList<>();
+
+            loansList.add(new Loan(1.5, 2, 100000));
+            loansList.add(new Loan(2.5, 3, 200000));
+            loansList.add(new Loan(3.0, 3, 300000));
+            loansList.add(new Loan(4.5, 4, 400000));
+            loansList.add(new Loan(5.5, 5, 500000));
+
+            for (Loan item : loansList)
+                output.writeObject(item);
         }
     }
 }
 
-class Loan implements Cloneable {
+class Loan implements Serializable {
     private double annualInterestRate;
     private int numberOfYears;
     private double loanAmount;
