@@ -7,10 +7,12 @@ of states and capitals so that the questions are displayed randomly.
 
 import java.util.Map;
 import java.util.Scanner;
+import java.util.SortedSet;
 
 public class Ex20_3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
         Map<String, String> questions =
                 Map.of("Alabama", "Montgomery",
                         "Alaska", "Juneau",
