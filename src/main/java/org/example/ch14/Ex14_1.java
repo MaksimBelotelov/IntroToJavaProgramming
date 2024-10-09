@@ -1,5 +1,10 @@
 package org.example.ch14;
 
+/*
+(Display images) Write a program that displays four images in a grid pane, as
+shown in Figure 14.43a.
+ */
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
