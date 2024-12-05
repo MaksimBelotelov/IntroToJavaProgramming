@@ -11,11 +11,6 @@ import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 public class Ex14_10 extends Application {
-
-    public static void main(String[] args) {
-        launch(args);
-    }
-
     @Override
     public void start(Stage primaryStage) {
         Scene scene = new Scene(new MyCylinder(), 300, 200);
